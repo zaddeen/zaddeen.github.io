@@ -4,35 +4,22 @@
   <title>Zaddeen Benaissa</title>
   <link rel="stylesheet" type="text/css" href="index.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
+<nav>
+  <ul class = "nav-bar">
+    <li class = "nav-item"> <a id="active" href="#home">ZB</a></li>
+    <li class = "nav-item"> <a href="#projects">Projects</a></li>
+    <li class = "nav-item"> <a href="#about">About Me</a></li>
+    <li class = "nav-item"> <a href="#contact">Contact Information</a></li>
+  </ul>
+</nav>
 <body>
-  <nav>
-    <ul class = "nav-bar">
-      <li class = "nav-item"> <a id="active" href="#home">ZB</a></li>
-      <li class = "nav-item"> <a href="#about">About Me</a></li>
-      <li class = "nav-item"> <a href="#projects">Projects</a></li>
-      <li class = "nav-item"> <a href="#contact">Contact Information</a></li>
-    </ul>
-  </nav>
-  <div id="about">
-    <h1> About Me </h1>
-      <h2>Introduction</h2>
-        <p>Welcome! My name is Zaddeen Benaissa, I'm a Computer Science student
-          at Northwestern University. I've always loved problem solving, and I found
-          that programming was the perfect way to blend my creativity with something
-          that challenged me. I've delved into several areas of CS through my classwork,
-          including Front-End Design, Machine Learning, and Game Design. Outside of class
-          I've enjoyed experimenting with APIs, especially those that have data
-          about some of my hobbies (including playing cards, the NBA, and the
-          sci-fi TV show Rick and Morty).</p>
-      <h2> Programming Languages </h2>
-        <p>Python, HTML, CSS, Javascript, C, C++, C#, MATLAB, AMPL</p>
-  </div>
-  <div class = "projects_title">
-    <h1>My Projects</h1>
-    <p>Here are a few of the projects I've worked on at school and on my own.
-      Feel free to click the titles to be visit them on GitHub and learn
-      more! </p>
+  <div class = "welcome_text">
+    <h1>Welcome!</h1>
+    <p>My name is Zaddeen Benaissa, I'm a Computer Science student at Northwestern University.
+      Here are a few of the projects I've worked on at school and on my own.
+      Feel free to click the titles to visit the projects on GitHub and learn more! </p>
   </div>
   <div class = "projects" id="projects">
     <article class = "project">
@@ -43,7 +30,7 @@
           on a weekly basis, which helped us quickly respond to feedback and easily
           incorporate our new ideas. Since the class focused UX (HTML, CSS, JavaScript) we
           implemented no backend, but we found that testers enjoyed our simple and visually
-          pleasing design.  The site is live on GitHub, and you can check it out at the link below
+          pleasing design.  The site is live on GitHub, and you can check it out at the link above
           (use the username "buymepants" and the password "password2" to log in).</p>
     </article>
     <article class = "project">
@@ -55,11 +42,36 @@
           while also developing my object-oriented programming skills.</p>
     </article>
   </div>
+  <div id="about">
+    <h1>Personal Info</h1>
+      <p> I've always loved problem solving, and I found
+        that programming was the perfect way to blend my creativity with something
+        that challenged me. I've delved into several areas of CS through my classwork,
+        including Front-End Design, Machine Learning, and Game Design. Outside of class
+        I've enjoyed experimenting with APIs, especially those that have data
+        about some of my hobbies (including playing cards, the NBA, and the
+        sci-fi TV show Rick and Morty).</p>
+    <h2> Programming Languages </h2>
+      <p>Python, HTML, CSS, Javascript, C, C++, C#, MATLAB, AMPL</p>
+  </div>
   <div id="contact">
     <h1>Contact Info</h1>
-      <p> If you have any questions or just want to chat, feel free to shoot me an
-        e-mail at zaddeen@u.northwestern.edu. You can also add me on LinkedIn using
-        the link below. Thanks for stopping by!</p>
+      <p> Thanks for stopping by! If you have any questions or just want to chat,
+        I'm always available by email at zaddeen@u.northwestern.edu. Also, feel free
+        to check out my LinkedIn and GitHub for more content and info, all using the links below!
+        </p>
   </div>
-</body>
+  </body>
+  <footer>
+    <a href="mailto:zaddeen@u.northwestern.edu">
+      <img class="email" src="assets/email_logo.png"></img>
+    </a>
+    <a href="https://www.linkedin.com/in/zaddeen-benaissa/" target="_blank">
+      <img class="linkedin" src="assets/linkedin_logo.png"></img>
+    </a>
+    <a href="https://github.com/zaddeen" target="_blank">
+      <img class="github" src="assets/github_logo.png"></img>
+    </a>
+
+  </footer>
 </html>
