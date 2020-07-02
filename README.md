@@ -1,2 +1,2 @@
-# zaddeen-benaissa
+# zaddeen.github.io
 Personal Website.
