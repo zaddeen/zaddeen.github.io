@@ -171,18 +171,7 @@ footer {
 }
 
 /* Smaller Screen Adjustments */
-@media screen and (max-width: 1000px) {
-  h2 {margin-left: -50%; margin-right: -50%;}
-  .nav-item {margin-left: 20px; margin-right: 20px;}
-  .project_and_image {flex-direction: column; align-items: center;}
-  .project_description {text-align: center; margin-left: -10%; margin-right: -10%;}
-  .bio {flex-direction: column; align-items: center;}
-  .personal_info {text-align: center; margin-left: -10%; margin-right: -10%;}
-  #contact {margin-left: 10%; margin-right: 10%;}
-}
-
-/* Mobile Screen Adjustments */
-@media screen and (max-device-width: 1000px) {
+@media screen and (max-width: 1024px) {
   h2 {margin-left: -50%; margin-right: -50%;}
   .nav-item {margin-left: 20px; margin-right: 20px;}
   .project_and_image {flex-direction: column; align-items: center;}
