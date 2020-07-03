@@ -89,7 +89,7 @@ body {
   padding: 10px;
 }
 
-h2 a {
+.project_and_image a {
   text-decoration: none;
   color: #30839f;
 }
