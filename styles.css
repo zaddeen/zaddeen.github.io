@@ -158,7 +158,7 @@ footer {
   margin-top: -15px;
 }
 
-/* Mobile & Smaller Screen Adjustments */
+/* Smaller Screen Adjustments */
 @media screen and (max-width: 1000px) {
   h2 {margin-left: -50%; margin-right: -50%;}
   .nav-item {margin-left: 20px; margin-right: 20px;}
@@ -169,6 +169,7 @@ footer {
   #contact {margin-left: 10%; margin-right: 10%;}
 }
 
+/* Mobile Screen Adjustments */
 @media screen and (max-device-width: 1000px) {
   h2 {margin-left: -50%; margin-right: -50%;}
   .nav-item {margin-left: 20px; margin-right: 20px;}
