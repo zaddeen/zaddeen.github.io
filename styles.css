@@ -127,6 +127,11 @@ body {
   margin-right: 40px;
 }
 
+#self_photo {
+  height:199px;
+  width:172px;
+}
+
 footer {
   display: flex;
   flex-direction: row;
@@ -151,5 +156,16 @@ footer {
   width: 85px;
   height: 85px;
   margin-top: -15px;
+}
+
+/* Mobile & Smaller Screen Adjustments */
+@media screen and (max-width: 1000px) {
+  h2 {margin-left: -50%; margin-right: -50%;}
+  .nav-item {margin-left: 20px; margin-right: 20px;}
+  .project_and_image {flex-direction: column; align-items: center;}
+  .project_description {text-align: center; margin-left: -10%; margin-right: -10%;}
+  .bio {flex-direction: column; align-items: center;}
+  .personal_info {margin-left: -10%; margin-right: -10%;}
+  #contact {margin-left: 10%; margin-right: 10%;}
 }
 
