@@ -136,6 +136,14 @@ body {
   width:172px;
 }
 
+.programming_languages {
+  text-align: center;
+}
+
+#contact {
+  text-align: center;
+}
+
 footer {
   display: flex;
   flex-direction: row;
@@ -169,7 +177,7 @@ footer {
   .project_and_image {flex-direction: column; align-items: center;}
   .project_description {text-align: center; margin-left: -10%; margin-right: -10%;}
   .bio {flex-direction: column; align-items: center;}
-  .personal_info {margin-left: -10%; margin-right: -10%;}
+  .personal_info {text-align: center; margin-left: -10%; margin-right: -10%;}
   #contact {margin-left: 10%; margin-right: 10%;}
 }
 
@@ -180,7 +188,7 @@ footer {
   .project_and_image {flex-direction: column; align-items: center;}
   .project_description {text-align: center; margin-left: -10%; margin-right: -10%;}
   .bio {flex-direction: column; align-items: center;}
-  .personal_info {margin-left: -10%; margin-right: -10%;}
+  .personal_info {text-align: center; margin-left: -10%; margin-right: -10%;}
   #contact {margin-left: 10%; margin-right: 10%;}
 }
 
