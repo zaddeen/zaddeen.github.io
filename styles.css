@@ -24,17 +24,15 @@ nav {
 }
 
 .nav-item {
-  float: left;
   margin-right: 50px;
   margin-left: 50px;
   margin-bottom: 10px;
-  border-right: 1px solid white;
 }
 
 .nav-item a {
   display: block;
   color: dimgray;
-  padding: 14px 16px;
+  padding: 16px 16px;
   text-decoration: none;
 }
 
@@ -69,7 +67,7 @@ body {
   font-size: 17px;
 }
 
-.welcome_text {
+.project_intro {
   margin-top: 3%;
   margin-bottom: 20px;
   margin-left: 25%;
@@ -108,10 +106,21 @@ body {
 
 /* About Me, Contact Info */
 #about, #contact {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   margin-left: 25%;
   margin-right: 25%;
   text-align: center;
+}
+
+.bio {
+  display: flex;
+  flex-direction: row;
+}
+
+.personal_info {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
 }
 
 footer {
