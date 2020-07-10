@@ -92,8 +92,16 @@ body {
 }
 
 .project_and_image a {
-  text-decoration: none;
   color: #30839f;
+}
+
+.project_and_image h3 {
+  color: #7083cf;
+  margin-bottom: -1%;
+}
+
+.project_and_image h2 {
+  margin-bottom: -3%;
 }
 
 .project_description {
@@ -107,6 +115,7 @@ body {
   width: 350px;
   height: 175px;
 }
+
 
 /* About Me, Contact Info */
 .bio {
@@ -180,6 +189,7 @@ footer {
   .project_intro {margin-left: 0px; margin-right: 0px;}
   .nav-item {margin-left: 20px; margin-right: 20px;}
   .project_and_image {flex-direction: column; align-items: center;}
+  .project_and_image h2 {margin-bottom: -2%;}
   .project_description {text-align: center; margin-left: -10%; margin-right: -10%;}
   .bio {flex-direction: column; align-items: center; margin-left: 10%; margin-right: 10%;}
   .personal_info {text-align: center; margin-right: 0px;}
