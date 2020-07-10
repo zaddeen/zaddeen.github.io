@@ -88,8 +88,9 @@ body {
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  margin-left: 15%;
-  margin-right: 20%;
+  width: 950px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 10px;
 }
 
@@ -122,8 +123,9 @@ body {
 /* About Me, Contact Info */
 .bio {
   margin-bottom: 40px;
-  margin-left: 20%;
-  margin-right: 20%;
+  width: 950px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #about h2 {
@@ -156,8 +158,9 @@ body {
 }
 
 .contact_description {
-  margin-left: 20%;
-  margin-right: 20%;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer {
@@ -190,11 +193,20 @@ footer {
 @media screen and (max-width: 1024px) {
   .project_intro {margin-left: 0px; margin-right: 0px;}
   .nav-item {margin-left: 20px; margin-right: 20px;}
-  .project_and_image {flex-direction: column; align-items: center;}
+  .project_and_image {flex-direction: column; align-items: center; width: 680px;}
   .project_and_image h2 {margin-bottom: -2%;}
-  .project_description {text-align: center; margin-left: -10%; margin-right: -10%;}
-  .bio {flex-direction: column; align-items: center; margin-left: 10%; margin-right: 10%;}
-  .personal_info {text-align: center; margin-right: 0px;}
-  .contact_description {margin-left: 10%; margin-right: 10%;}
+  .project_description {text-align: center;}
+  .bio {flex-direction: column; align-items: center; width: 680px;}
+  .personal_info {text-align: center; margin-right: 0;}
+  .contact_description {width: 680px;}
 }
+
+@media screen and (max-width: 720px) {
+  .project_and_image {width: 450px;}
+  .project_description {margin-left: 10%; margin-right: 10%;} 
+  .bio {width: 450px;}
+  .contact_description {width: 450px;}
+}
+
+
 
