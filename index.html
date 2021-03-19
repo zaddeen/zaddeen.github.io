@@ -6,7 +6,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
-  <script src="index.js"></script>
+  <script src="index.js"> </script>
 </head>
 <body>
   <div class="hero-image">
@@ -15,110 +15,39 @@
     </div>
   </div>
   <nav>
-    <ul class="nav-bar">
-      <li class="nav-item"> <a href="#projects">Projects</a></li>
-      <li class="nav-item"> <a href="#about">About Me</a></li>
-      <li class="nav-item"> <a href="#contact">Contact Information</a></li>
+    <ul class="nav-bar" id="nav-bar">
+      <li class="nav-item" id="about_nav" onClick = "loadAboutMe()"> <a href="#nav-bar">About Me</a></li>
+      <li class="nav-item" id="projects_nav" onClick = "loadProjects()"> <a href="#nav-bar">Projects</a></li>
+      <li class="nav-item" id="experience_nav" onClick="loadExperience()"> <a href="#nav-bar">Experience</a></li>
     </ul>
   </nav>
-  <button id="test_button" onClick = "theFunction()"> Hello! </button>
-  <div class = "welcome_text">
-    <p>Here are a few of the projects I've worked on at school and on my own.
-      Feel free to click the titles to visit the projects on GitHub and learn more! </p>
-  </div>
-  <div class="projects">
-    <div class="project_and_image">
-      <a href="https://zaddeen.github.io/sorting_algorithms/" target="_blank">
-        <video class="project_image" id="sorting" playsinline autoplay muted loop>
-          <source src="assets/quicksort.mp4" type="video/mp4"/>
-          <source src="assets/quicksort.webm" type="video/webm"/>
-          Your browser does not support the video tag.
-        </video>
-      </a>
-      <article class="project_description">
-        <h2><a href="https://zaddeen.github.io/sorting_algorithms/" target="_blank">Visualizing Sorting Algorithms</a></h2>
-        <h3> Javascript (React) </h3>
-        <p> While working remotely over the summer, I became totally transfixed with videos
-          of sorting algorithms in action. Thinking about it, I realized that I was familiar with
-          all of the pseudocode for the algorithms, so I decided to make my own project! I
-          created this React App my spare time in order to showcase and animate some of the most
-          popular/interesting sorting algorithms, including Merge Sort, Quicksort, and a few others.
-          The project was a great way to learn React and hone my JavaScript knowledge, and I'm excited
-          to continue adding to it in the future. The link to the live version is above, and I've
-          also pushed all of my code with extensive comments to a GitHub repository
-          <a  href="https://github.com/zaddeen/sorting_algorithms"
-              target="_blank"
-              style="font-weight:bold">right here</a>.
-          Feel free to play around with it, I hope you enjoy watching as much as I do!</p>
-      </article>
-    </div>
-    <div class="project_and_image">
-      <a href="https://hci330-bmp.github.io/elate/" target="_blank">
-        <img class = "project_image" id="elate_logo" src="assets/elate_logo.png"></img>
-      </a>
-      <article class = "project_description">
-        <h2><a href="https://hci330-bmp.github.io/elate/" target="_blank">Elate </a></h2>
-        <h3> HTML, CSS, Javascript</h3>
-          <p>For our final project for Human Computer Interaction, my team members and I
-            designed Elate, a website to help people keep track of the positive
-            aspects of their lives through journals and goals. We were able to user test
-            on a weekly basis, which helped us quickly respond to feedback and easily
-            incorporate our new ideas. Since the class focused UX (HTML, CSS, JavaScript) we
-            implemented no backend, but we found that testers enjoyed our simple and visually
-            pleasing design. You can check out the live prototype at the link above
-            (use the username "buymepants" and the password "password2" to log in)
-            as well as the GitHub repository
-            <a  href="https://github.com/HCI330-BMP/elate"
-                target="_blank"
-                style="font-weight:bold">right here</a>.</p>
-      </article>
-    </div>
-    <div class="project_and_image">
-      <a href="https://github.com/zaddeen/galaga" target="_blank">
-        <img class = "project_image" id="galaga_logo" src="assets/galaga_logo.png"></img>
-      </a>
-      <article class = "project_description">
-        <h2><a href="https://github.com/zaddeen/galaga" target="_blank">Galaga</a></h2>
-        <h3>C++</h3>
-          <p>This final project was my first experience with game design, and I had a ton of
-            fun re-creating one of my childhood favorites. The goal was to re-create the video
-            game of our choice, following a list of functional requirements that we determined
-            as those most essential to the user experience. It was a great way to have fun
-            while also developing my object-oriented programming skills.</p>
-      </article>
-    </div>
-  </div>
-  <div id="about">
-    <h2>---  Here's some background on me  ---</h2>
-    <div class="bio">
-      <div class="personal_info">
-          <p> I've always loved problem solving, and I found
-            that programming was the perfect way to blend my creativity with something
-            that challenged me. I'm now pursuing a degree in Computer Science at Northwestern,
-            and I've delved into several areas in CS through my classes - these include
-            Front-End Design, Machine Learning, and Game Design. Outside of class I've enjoyed
-            working with sorting algorithms and experimenting with APIs, especially those that
-            have data about some of my hobbies (including playing cards, the NBA, and the sci-fi
-            TV show Rick and Morty).</p>
+  <hr>
+  <div id="main_area">
+    <div id="about">
+      <div class="bio">
+        <div class="personal_info">
+            <p> I've always loved problem solving, and I found
+              that programming was the perfect way to blend my creativity with something
+              that challenged me. I'm now pursuing a degree in Computer Science at Northwestern,
+              and I've delved into several areas in CS through my classes - these include
+              Front-End Design, Machine Learning, and Game Design. Outside of class I've enjoyed
+              working with sorting algorithms and experimenting with APIs, especially those that
+              have data about some of my hobbies (including playing cards, the NBA, and the sci-fi
+              TV show Rick and Morty).</p>
+        </div>
+        <img class = "bio_image" id="self_photo" src="assets/self-photo.jpeg"></img>
       </div>
-      <img class = "bio_image" id="self_photo" src="assets/self-photo.jpeg"></img>
-    </div>
-    <h2>These are the languages I'm familiar with</h2>
-    <div class="programming_languages">
-      <p>Python, HTML, CSS, Javascript, C, C++, C#, MATLAB, AMPL</p>
-    </div>
-  </div>
-  <div id="contact">
-    <h2>---  I'd love to get in touch with you  ---</h2>
-      <div class="contact_description">
-        <p> Thanks for stopping by! If you have any questions or just want to chat,
-          I'm very responsive to an email at zaddeen@u.northwestern.edu. Also, feel free
-          to check out my LinkedIn and GitHub to learn more about my experience, all using the links below!
-          </p>
+      <h2>These are the languages I'm familiar with</h2>
+      <div class="programming_languages">
+        <p>Python, HTML, CSS, Javascript, C, C++, C#, MATLAB, AMPL</p>
       </div>
+    </div>
   </div>
-  </body>
-  <footer>
+</body>
+<hr>
+<footer>
+  <p id="contact_title"> Contact Me </p>
+  <div class="social_media">
     <a href="mailto:zaddeen@u.northwestern.edu">
       <img class="email" src="assets/email_logo.png"></img>
     </a>
@@ -128,5 +57,6 @@
     <a href="https://github.com/zaddeen" target="_blank">
       <img class="github" src="assets/github_logo.png"></img>
     </a>
-  </footer>
+  </div>
+</footer>
 </html>

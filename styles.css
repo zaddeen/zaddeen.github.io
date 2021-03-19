@@ -9,6 +9,7 @@ body, html {
 
 nav {
   font-family: 'Oswald', sans-serif;
+  font-size: 30px;
 }
 
 .nav-bar {
@@ -40,6 +41,10 @@ nav {
   color: #30839f;
 }
 
+#about_nav {
+  text-decoration: underline;
+}
+
 /* Hero Image */
 
 .hero-image {
@@ -69,8 +74,9 @@ body {
   font-size: 17px;
 }
 
-#projects {
+#main_area {
   padding-top: 1%;
+  padding-bottom: 5vh;
 }
 
 .project_intro {
@@ -109,6 +115,15 @@ body {
   margin-bottom: 0px;
 }
 
+.project_and_image .company_name {
+  color: #30839f;
+}
+
+.project_and_image .experience_date {
+  color: #70cfbc;
+  margin-top: 1%;
+}
+
 .project_description {
   margin-left: 40px;
   flex-direction: column;
@@ -118,9 +133,16 @@ body {
 
 .project_image {
   width: 350px;
-  height: 175px;
 }
 
+#search_engine {
+  width: 350px;
+  border: 1px solid black;
+}
+
+#accenture_logo {
+  width: 350px;
+}
 
 /* About Me, Contact Info */
 .bio {
@@ -165,7 +187,25 @@ body {
   margin-right: auto;
 }
 
+hr {
+    width:70%;
+    margin:0 auto;
+}
+
 footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+#contact_title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  color: dimgray;
+}
+
+.social_media {
   display: flex;
   flex-direction: row;
   justify-content: center;
