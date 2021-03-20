@@ -11,7 +11,7 @@ html p {
 
 /* Upper navigation bar styling */
 
-nav, .programming_title {
+nav, .programming_title, .bio_title, .education_title {
   font-family: 'Oswald', sans-serif;
   font-size: 30px;
   color: dimgray;
@@ -86,7 +86,6 @@ nav, .programming_title {
 /* Body Styling */
 body {
   font-family: 'Lato', sans-serif;
-  font-size: 17px;
 }
 
 #main_area {
@@ -134,7 +133,7 @@ body {
 }
 
 .project_and_image .company_name {
-  color: #30839f;
+  color: #7083cf;
 }
 
 .project_and_image .experience_date {
@@ -163,14 +162,30 @@ body {
 }
 
 /* About Me, Contact Info */
-.bio {
-  margin-bottom: 40px;
+.bio_title, .education_title, .bio, .education_info {
+  margin-bottom: 1%;
   width: 950px;
   margin-left: auto;
   margin-right: auto;
 }
 
-#about h2 {
+.bio_title, .education_title {
+  text-align: left;
+}
+
+.photo_and_degree {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.degree_image {
+  width: 50px;
+  margin-right: 1%;
+}
+
+.programming_title {
+  padding-top: 2%;
   text-align: center;
 }
 
@@ -180,8 +195,6 @@ body {
 }
 
 .personal_info {
-  display: flex;
-  flex-direction: column;
   margin-right: 40px;
   text-align: left;
 }
@@ -251,15 +264,28 @@ footer {
   font-family: 'Oswald', sans-serif;
   font-size: 30px;
   color: dimgray;
+  margin-bottom: 1%;
+}
+
+#contact_text {
+  margin-right: auto;
+  margin-left: auto;
+  width: 40%;
 }
 
 .social_media {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
 }
 
 /* Contact/Social Media Buttons */
+.resume {
+  width: 70px;
+  margin-right: 20px;
+}
+
 .email {
   margin-top: 1px;
   width: 70px;
@@ -276,7 +302,6 @@ footer {
 .github {
   width: 85px;
   height: 85px;
-  margin-top: -15px;
 }
 
 footer img:hover {
@@ -290,12 +315,13 @@ footer img:hover {
   .project_and_image {flex-direction: column; align-items: center; width: 680px; margin-bottom: 5vh;}
   /*.project_and_image h2 {margin-bottom: -2%;}*/
   .project_description {text-align: center; margin-left: 0;}
+  #about p {font-size: 18px;}
   .bio {flex-direction: column; align-items: center; width: 680px;}
-  .personal_info {text-align: center; margin-right: 0;}
+  .bio_title, .education_title {text-align: center;}
+  .education_info {display: flex; flex-direction: column; white-space: nowrap; align-items: center;}
+  .personal_info {text-align:center; margin-right: 0;}
   .contact_description {width: 680px;}
-  #scroll_logo {
-  padding-top: 70vh;
-}
+  #scroll_logo {padding-top: 70vh;}
 }
 
 @media screen and (max-width: 720px) {

@@ -4,18 +4,32 @@ function loadAboutMe () {
   document.getElementById("main_area").innerHTML = 
   `
   <div id="about">
-    <div class="bio">
-      <div class="personal_info">
-          <p> I've always loved problem solving, and I found
-            that programming was the perfect way to blend my creativity with something
-            that challenged me. I'm now pursuing a degree in Computer Science at Northwestern,
-            and I've delved into several areas in CS through my classes - these include
-            Front-End Design, Machine Learning, and Game Design. Outside of class I've enjoyed
-            working with sorting algorithms and experimenting with APIs, especially those that
-            have data about some of my hobbies (including playing cards, the NBA, and the sci-fi
-            TV show Rick and Morty).</p>
+    <div id="bio_and_title">
+      <h2 class="bio_title"> Bio </h2>
+      <div class="bio">
+        <div class="personal_info">
+            <p> I've always loved problem solving, and I found
+              that programming was the perfect way to blend my creativity with something
+              that challenged me. I'm now a Junior sutdying in Computer Science at Northwestern,
+              and I've delved into several areas in CS through my classes - these include
+              Front-End Design, Machine Learning, and Scalable Software Architectures. Outside of class I've enjoyed
+              working with sorting algorithms and experimenting with APIs, especially those that
+              have data about some of my hobbies (including playing cards, the NBA, and the sci-fi
+              TV show Rick and Morty).</p>
+        </div>
+        <img class = "bio_image" id="self_photo" src="assets/self-photo.jpeg"></img>
       </div>
-      <img class = "bio_image" id="self_photo" src="assets/self-photo.jpeg"></img>
+    </div>
+    <h2 class="education_title"> Education </h2>
+    <div class="education_info">
+      <div class="photo_and_degree">
+        <img class="degree_image" src="assets/nu_engineering_logo.jpeg"> </img> 
+        <p class="education_text"> Combined BS/MS in <b><i> Computer Science </i></b> </p>
+      </div>
+      <div class="photo_and_degree">
+        <img class="degree_image" src="assets/nu_kellogg_logo.png"> </img> 
+        <p class="education_text"> Kellogg Certificate Program for Undergraduates in <b><i> Managerial Analytics </i></b> </p>
+      </div>
     </div>
     <h2 class="programming_title">Programming Languages & Skills</h2>
     <div class="programming_languages" id="programming_languages">
@@ -53,7 +67,7 @@ function loadProjects () {
         The components included a crawler to grab the most recent
         news data (in the form of WARC files) and post them to S3 storage, a Tomcat server to fetch the results
         of queries, and a React page to allow users to search and view results. Click on the title to watch
-        the shwocase video of all the components in action!
+        the showcase video of all the components in action!
       </p>
     </article>
   </div>
@@ -148,9 +162,9 @@ function loadExperience () {
       <p> During the summer of 2020, some close friends of mine created Homebase, a platform for Northwestern students to find
         better off-campus housing. I joined as the third member of the Startup, and its been a total blast.
         Whether it be writing custom Python functions to interact with our database, re-styling pages based on mockups
-        using HTML and CSS, or even creating our own automatic email service in Javascript, I've gotten real experiences 
+        using HTML and CSS, or even creating our own automatic email service in TypeScript, I've gotten real experiences 
         with a ton of different programming languages and fields that other experiences just can't offer. </p>
-      <h3 class="experience_date"> September - Present </h3>
+      <h3 class="experience_date"> September 2020 - Present </h3>
     </article>
   </div>
   <div class="project_and_image">
@@ -191,10 +205,10 @@ function loadContactInfo () {
 
 function loadProgrammingLanguages () {
   // First, load the programming languages table.
-  const languages = ["HTML", "JavaScript", "CSS", "Java", "Python", "C & Assembly", "C#", "RStudio", "AMPL", "MATLAB"];
+  const languages = ["HTML", "JavaScript", "CSS", "Java", "Python", "TypeScript", "C & Assembly", "C++", "C#", "R & RStudio", "AMPL", "MATLAB"];
   const languageLogos = ["html_logo.png", "javascript_logo.png", "css_logo.png", "java_logo.png", "python_logo.png",
-                         "c_logo.png", "csharp_logo.jpg", "r_logo.png", "ampl_logo.jpg", "matlab_logo.png"];
-  const languageSkills = [5, 5, 4, 4, 4, 3, 3, 3, 2, 2];
+                         "typescript_logo.png", "c_logo.png", "cplus_logo.png", "csharp_logo.jpg", "r_logo.png", "ampl_logo.jpg", "matlab_logo.png"];
+  const languageSkills = [5, 5, 4, 4, 4, 4, 3, 3, 3, 3, 2, 2];
   
   for (var i=0; i<languages.length; i++) {
     // Create new row.
@@ -228,9 +242,9 @@ function loadProgrammingLanguages () {
   }
 
   // Now, load the skills table.
-  const skills = ["Git", "React", "AWS", "Firebase", "Office"];
-  const skillLogos = ["git_logo.png", "react_logo.png", "aws_logo.png", "firebase_logo.png", "office_logo.png"]
-  const skillLevels = [5, 5, 4, 4, 4];
+  const skills = ["Git", "React", "Firebase", "Office", "AWS"];
+  const skillLogos = ["git_logo.png", "react_logo.png", "firebase_logo.png", "office_logo.png", "aws_logo.png"]
+  const skillLevels = [5, 5, 4, 4, 3];
 
   for (var m=0; m<skills.length; m++) {
     // Create new row.
