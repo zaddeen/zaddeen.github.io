@@ -4,7 +4,6 @@ function loadAboutMe () {
   document.getElementById("main_area").innerHTML = 
   `
   <div id="about">
-    <h2>---  Here's some background on me  ---</h2>
     <div class="bio">
       <div class="personal_info">
           <p> I've always loved problem solving, and I found
@@ -18,12 +17,18 @@ function loadAboutMe () {
       </div>
       <img class = "bio_image" id="self_photo" src="assets/self-photo.jpeg"></img>
     </div>
-    <h2>These are the languages I'm familiar with</h2>
-    <div class="programming_languages">
-      <p>Python, HTML, CSS, Javascript, C, C++, C#, MATLAB, AMPL</p>
+    <h2 class="programming_title">Programming Languages & Skills</h2>
+    <div class="programming_languages" id="programming_languages">
+      <table id="programming_table">
+
+      </table>
+      <table id="skills_table">
+
+      </table>
     </div>
   </div>
   `;
+  loadProgrammingLanguages();
   document.getElementById("about_nav").style.textDecoration = "underline";
 }
 
@@ -125,7 +130,6 @@ function loadExperience () {
     <a href="https://www.accenture.com/us-en/services/security-index" target="_blank">
       <img class = "project_image" id="accenture_logo" src="assets/accenture_logo.png"></img>
     </a>
-    </a>
     <article class="project_description">
       <h2>Incoming Security Summer Analyst</h2>
       <h3 class="company_name"> Accenture </h3>
@@ -138,10 +142,9 @@ function loadExperience () {
     <a href="https://homebasenu.com/home" target="_blank">
       <img class = "project_image" id="homebase_logo" src="assets/homebase_logo.png"></img>
     </a>
-    </a>
     <article class="project_description">
       <h2>Software Engineer</h2>
-      <h3 class="company_name"> Homebase NU </h3>
+      <h3 class="company_name"> Homebase </h3>
       <p> During the summer of 2020, some close friends of mine created Homebase, a platform for Northwestern students to find
         better off-campus housing. I joined as the third member of the Startup, and its been a total blast.
         Whether it be writing custom Python functions to interact with our database, re-styling pages based on mockups
@@ -153,7 +156,6 @@ function loadExperience () {
   <div class="project_and_image">
     <a href="https://www.mccormick.northwestern.edu/industrial/" target="_blank">
       <img class = "project_image" id="northwestern_logo" src="assets/northwestern_iems.png"></img>
-    </a>
     </a>
     <article class="project_description">
       <h2>Research Intern</h2>
@@ -186,6 +188,84 @@ function loadContactInfo () {
   document.getElementById("contact_nav").style.textDecoration = "underline";
 }
 */
+
+function loadProgrammingLanguages () {
+  // First, load the programming languages table.
+  const languages = ["HTML", "JavaScript", "CSS", "Java", "Python", "C & Assembly", "C#", "RStudio", "AMPL", "MATLAB"];
+  const languageLogos = ["html_logo.png", "javascript_logo.png", "css_logo.png", "java_logo.png", "python_logo.png",
+                         "c_logo.png", "csharp_logo.jpg", "r_logo.png", "ampl_logo.jpg", "matlab_logo.png"];
+  const languageSkills = [5, 5, 4, 4, 4, 3, 3, 3, 2, 2];
+  
+  for (var i=0; i<languages.length; i++) {
+    // Create new row.
+    var newRow = document.createElement("tr");
+    // Add programming language and image.
+    var languageNameImage = document.createElement("td");
+    languageNameImage.className = "photo_and_language";
+    var languageImage = document.createElement("img");
+    languageImage.className = "programming_logo";
+    languageImage.src = "assets/programming_languages/" + languageLogos[i];
+    languageNameImage.appendChild(languageImage);
+    var languageName = document.createElement("p");
+    var langText = document.createTextNode(languages[i]);
+    languageName.appendChild(langText);
+    languageNameImage.appendChild(languageName);
+    // Add skill level for given language.
+    var skillLevel = document.createElement("td");
+    for (var j=0; j<5; j++) {
+      if (j < languageSkills[i]) {
+        skillLevel.innerHTML += `<img class="exp_star" src="assets/programming_languages/yellow_star.png"> </img>`
+      }
+      else {
+        skillLevel.innerHTML += `<img class="exp_star" src="assets/programming_languages/star_logo.png"> </img>`
+      }
+      
+    }
+    // Append the finished row to the table.
+    newRow.appendChild(languageNameImage);
+    newRow.appendChild(skillLevel);
+    document.getElementById("programming_table").appendChild(newRow);
+  }
+
+  // Now, load the skills table.
+  const skills = ["Firebase", "Git", "React",  "AWS", "Office"];
+  const skillLogos = ["firebase_logo.png", "git_logo.png", "react_logo.png", "aws_logo.png", "office_logo.png"]
+  const skillLevels = [5, 5, 5, 4, 4];
+
+  for (var m=0; m<skills.length; m++) {
+    // Create new row.
+    var skillRow = document.createElement("tr");
+    // Add programming language and image.
+    var skillBox = document.createElement("td");
+    skillBox.className = "photo_and_language";
+    var skillImage = document.createElement("img");
+    skillImage.className = "programming_logo";
+    skillImage.src = "assets/programming_languages/" + skillLogos[m];
+    skillBox.appendChild(skillImage);
+    var skillName = document.createElement("p");
+    var skillText = document.createTextNode(skills[m]);
+    skillName.appendChild(skillText);
+    skillBox.appendChild(skillName);
+    // Add skill level for given language.
+    var skillStars = document.createElement("td");
+    for (var n=0; n<5; n++) {
+      if (n < skillLevels[m]) {
+        skillStars.innerHTML += `<img class="exp_star" src="assets/programming_languages/yellow_star.png"> </img>`
+      }
+      else {
+        skillStars.innerHTML += `<img class="exp_star" src="assets/programming_languages/star_logo.png"> </img>`
+      }
+      
+    }
+    // Append the finished row to the table.
+    skillRow.appendChild(skillBox);
+    skillRow.appendChild(skillStars);
+    document.getElementById("skills_table").appendChild(skillRow);
+  }
+
+
+
+}
 
 // Called to clear styling of nav bar.
 function clearStyles () {
