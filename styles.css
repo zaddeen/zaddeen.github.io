@@ -6,7 +6,7 @@ body, html {
 }
 
 html p {
-  font-size: 19px;
+  font-size: 18px;
 }
 
 /* Upper navigation bar styling */
@@ -76,10 +76,11 @@ nav, .programming_title {
 }
 
 #scroll_logo {
+  display: flex;
   height: 40px;
-  position: absolute;
-  left: 50%;
-  top: 90%;
+  padding-top: 90vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Body Styling */
