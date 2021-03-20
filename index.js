@@ -228,9 +228,9 @@ function loadProgrammingLanguages () {
   }
 
   // Now, load the skills table.
-  const skills = ["Firebase", "Git", "React",  "AWS", "Office"];
-  const skillLogos = ["firebase_logo.png", "git_logo.png", "react_logo.png", "aws_logo.png", "office_logo.png"]
-  const skillLevels = [5, 5, 5, 4, 4];
+  const skills = ["Git", "React", "AWS", "Firebase", "Office"];
+  const skillLogos = ["git_logo.png", "react_logo.png", "aws_logo.png", "firebase_logo.png", "office_logo.png"]
+  const skillLevels = [5, 5, 4, 4, 4];
 
   for (var m=0; m<skills.length; m++) {
     // Create new row.
