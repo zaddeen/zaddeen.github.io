@@ -293,6 +293,9 @@ footer img:hover {
   .bio {flex-direction: column; align-items: center; width: 680px;}
   .personal_info {text-align: center; margin-right: 0;}
   .contact_description {width: 680px;}
+  #scroll_logo {
+  padding-top: 70vh;
+}
 }
 
 @media screen and (max-width: 720px) {
