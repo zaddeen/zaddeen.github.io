@@ -318,11 +318,11 @@ footer img:hover {
   /*.project_and_image h2 {margin-bottom: -2%;}*/
   .project_description {text-align: center; margin-left: 0;}
   #about p {font-size: 18px;}
-  .bio {flex-direction: column; align-items: center; width: 680px;}
-  .bio_title, .education_title {text-align: center;}
+  .bio {margin-left: auto; margin-right: auto; flex-direction: column; align-items: center; width: 680px;}
+  .bio_title, .education_title, .bio {text-align: center;}
+  .bio_image {margin-bottom: 2.5vh;}
   .education_info {display: flex; flex-direction: column; white-space: nowrap; align-items: center;}
   .personal_info {text-align:center; margin-right: 0;}
-  .contact_description {width: 680px;}
   #scroll_logo {padding-top: 70vh;}
 }
 
