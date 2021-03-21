@@ -162,7 +162,7 @@ body {
 }
 
 /* About Me, Contact Info */
-.bio_title, .education_title, .bio, .education_info {
+#about {
   margin-bottom: 1%;
   width: 950px;
   margin-left: auto;
@@ -214,18 +214,20 @@ table {
 }
 
 #programming_languages {
+  width: 850px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  align-items: flex-start;
   justify-content: center;
 }
 
-#programming_table {
-  margin-right: 2vw;
+#programming_languages table {
+  table-layout: fixed;
 }
 
 td {
-  padding: 0.5vh 10%;
+  width: 170px;
   white-space: nowrap;
 }
 
@@ -233,14 +235,12 @@ td {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0.5vh 10%;
   white-space: nowrap;
 }
 
 .programming_logo {
   width: 40px;
   height: auto;
-  margin-left: 10px;
   margin-right: 10px;
 }
 
@@ -252,6 +252,8 @@ hr {
     width:70%;
     margin:0 auto;
 }
+
+/* Footer Styling */
 
 footer {
   display: flex;
