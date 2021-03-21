@@ -207,7 +207,8 @@ function loadProgrammingLanguages () {
   // First, load the programming languages table.
   const languages = ["HTML", "JavaScript", "CSS", "Java", "Python", "TypeScript", "C & Assembly", "C++", "C#", "PostgreSQL", "R & RStudio", "AMPL", "MATLAB"];
   const languageLogos = ["html_logo.png", "javascript_logo.png", "css_logo.png", "java_logo.png", "python_logo.png",
-                         "typescript_logo.png", "c_logo.png", "cplus_logo.png", "csharp_logo.jpg", "postgresql_logo.png", "r_logo.png", "ampl_logo.jpg", "matlab_logo.png"];
+                         "typescript_logo.png", "c_logo.png", "cplus_logo.png", "csharp_logo.jpg", "postgresql_logo.png", 
+                         "r_logo.png", "ampl_logo.jpg", "matlab_logo.png"];
   const languageSkills = [5, 5, 4, 4, 4, 4, 3, 3, 3, 3, 3, 2, 2];
   
   for (var i=0; i<languages.length; i++) {
