@@ -10,7 +10,7 @@ function loadAboutMe () {
         <div class="personal_info">
             <p> I've always loved problem solving, and I found
               that programming was the perfect way to blend my creativity with something
-              that challenged me. I'm now a Junior sutdying in Computer Science at Northwestern,
+              that challenged me. I'm now a Junior studying Computer Science at Northwestern,
               and I've delved into several areas in CS through my classes - these include
               Front-End Design, Machine Learning, and Scalable Software Architectures. Outside of class I've enjoyed
               working with sorting algorithms and experimenting with APIs, especially those that
