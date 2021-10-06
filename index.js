@@ -145,10 +145,14 @@ function loadExperience () {
       <img class = "project_image" id="accenture_logo" src="assets/accenture_logo.png"></img>
     </a>
     <article class="project_description">
-      <h2>Incoming Security Summer Analyst</h2>
+      <h2>Advanced App Engineering Summer Analyst</h2>
       <h3 class="company_name"> Accenture </h3>
-      <p> For the summer of 2021 I will be joining Accenture as a Security Summer Analyst. I hope to hone my computer network skills
-          and learn about how to create more secure solutions. </p>
+      <p> I had the privelege of joining Accenture as a Summer Analyst during the summer of 2020, and it was an amazing
+          opportunity that taught me a ton about both the consulting field in general and test automation, which was my
+          main job focus. I helped analyze over 500 automated test scripts across a range of different teams in order to
+          ensure the fastest build times possible, and I eventually ended up re-designing the entire suite to slash thes
+          existing times by more than 25%. Overall, I learned a ton from working closely with my supervisor, and the
+          Accenture company culture was one of the best I have ever experienced. </p>
       <h3 class="experience_date"> June - August 2021 </h3>
     </article>
   </div>
@@ -163,7 +167,7 @@ function loadExperience () {
         better off-campus housing. I joined as the third member of the Startup, and its been a total blast.
         Whether it be writing custom Python functions to interact with our database, re-styling pages based on mockups
         using HTML and CSS, or even creating our own automatic email service in TypeScript, I've gotten real experiences 
-        with a ton of different programming languages and fields that other experiences just can't offer. </p>
+        with a ton of different programming languages and fields that other opportunities just can't offer. </p>
       <h3 class="experience_date"> September 2020 - Present </h3>
     </article>
   </div>
