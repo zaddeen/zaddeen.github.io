@@ -157,7 +157,7 @@ body {
   border: 1px solid black;
 }
 
-#accenture_logo {
+#accenture_logo, #vax_alert, #google_logo {
   width: 350px;
 }
 

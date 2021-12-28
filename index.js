@@ -10,7 +10,8 @@ function loadAboutMe () {
         <div class="personal_info">
             <p> I've always loved problem solving, and I found
               that programming was the perfect way to blend my creativity with something
-              that challenged me. I'm now a Junior studying Computer Science at Northwestern,
+              that challenged me. I'm now a Senior studying Computer Science at Northwestern (in a combined degree program
+              to get my Bachelor's and Master's concurrently),
               and I've delved into several areas in CS through my classes - these include
               Front-End Design, Machine Learning, and Scalable Software Architectures. Outside of class I've enjoyed
               working with sorting algorithms and experimenting with APIs, especially those that
@@ -52,6 +53,24 @@ function loadProjects () {
   document.getElementById("main_area").innerHTML = 
   `
   <div class="project_and_image">
+    <a href="https://evanstonvaxalert.com/" target="_blank">
+      <img id="vax_alert" src="assets/vax-banner.png"></img>
+    </a>
+    <article class="project_description">
+      <h2><a href="https://evanstonvaxalert.com/" target="_blank">Evanston Vaccine Alert</a></h2>
+      <h3> Javascript (React), EJS </h3>
+      <p> As COVID-19 vaccines became more and more available during the Spring of 2021, my friends and I at Homebase
+        wanted to do our part to help our fellow Northwestern students and Evanston residents find appointments as painlessly
+        as possible. To do this we created Evanston Vaccine Alert, a free service that users could sign up for to receive automatic
+        emails with potential appointments in the Evanston & Chicago area. Optionally, we also offered the ability to receive
+        text message updates instead. The project was a great way to give back to the community while also learning about the automation
+        tools provided by services like AWS and SignalWire. Though the service is no longer active, you can still click on the logo
+        to see the web page we created and learn more about the services we offered.
+      </p>
+      <h3 class="experience_date"> March - May 2021 </h3>
+    </article>
+  </div>
+  <div class="project_and_image">
     <a href="https://youtu.be/D_mMU-N8FOs" target="_blank">
       <img id="search_engine" src="assets/searchengine.png"></img>
     </a>
@@ -69,6 +88,7 @@ function loadProjects () {
         of queries, and a React page to allow users to search and view results. Click on the title to watch
         the showcase video of all the components in action!
       </p>
+    <h3 class="experience_date"> January 2021 </h3>
     </article>
   </div>
   <div class="project_and_image">
@@ -94,6 +114,7 @@ function loadProjects () {
             target="_blank"
             style="font-weight:bold">right here</a>.
         Feel free to play around with it, I hope you enjoy watching as much as I do!</p>
+      <h3 class="experience_date"> July 2020 </h3>
     </article>
   </div>
   <div class="project_and_image">
@@ -115,7 +136,9 @@ function loadProjects () {
           <a  href="https://github.com/HCI330-BMP/elate"
               target="_blank"
               style="font-weight:bold">right here</a>.</p>
+      <h3 class="experience_date"> January - March 2020 </h3>
     </article>
+    
   </div>
   <div class="project_and_image">
     <a href="https://github.com/zaddeen/galaga" target="_blank">
@@ -129,6 +152,7 @@ function loadProjects () {
           game of our choice, following a list of functional requirements that we determined
           as those most essential to the user experience. It was a great way to have fun
           while also developing my object-oriented programming skills.</p>
+      <h3 class="experience_date"> March 2019 </h3>
     </article>
   </div>
   `;
@@ -140,6 +164,34 @@ function loadExperience () {
   clearStyles();
   document.getElementById("main_area").innerHTML =
   `
+  <div class="project_and_image">
+    <a href="https://careers.google.com/teams/engineering-technology/" target="_blank">
+      <img class = "project_image" id="google_logo" src="assets/google_logo.jpg"></img>
+    </a>
+    <article class="project_description">
+      <h2>Incoming Sofware Engineering Intern</h2>
+      <h3 class="company_name"> Google </h3>
+      <p> I'll be joining Google for the summer of 2022 as a Software Engineering Intern - can't wait to start! </p>
+      <h3 class="experience_date"> June - September 2022 </h3>
+    </article>
+  </div>
+  <div class="project_and_image">
+    <a href="https://homebasenu.com/home" target="_blank">
+      <img class = "project_image" id="homebase_logo" src="assets/homebase_logo.png"></img>
+    </a>
+    <article class="project_description">
+      <h2>Software Engineer</h2>
+      <h3 class="company_name"> Homebase </h3>
+      <p> During the summer of 2020, some close friends of mine created Homebase, a platform for Northwestern students to find
+        better off-campus housing. I joined as the third member of the Startup, and it was a total blast.
+        Whether it was writing custom Python functions to interact with our database, re-styling pages based on mockups
+        using HTML and CSS, or even creating our own automatic email service in TypeScript, I got real experience 
+        with a ton of different programming languages and fields that other opportunities just couldn't offer. Though we
+        eventually decided to shut down Homebase in November 2021, it was an amazing opportunity that really helped me gain
+        my footing as an experienced Software Engineer. </p>
+      <h3 class="experience_date"> September 2020 - November 2021 </h3>
+    </article>
+  </div>
   <div class="project_and_image">
     <a href="https://www.accenture.com/us-en/services/security-index" target="_blank">
       <img class = "project_image" id="accenture_logo" src="assets/accenture_logo.png"></img>
@@ -154,21 +206,6 @@ function loadExperience () {
           existing times by more than 25%. Overall, I learned a ton from working closely with my supervisor, and the
           Accenture company culture was one of the best I have ever experienced. </p>
       <h3 class="experience_date"> June - August 2021 </h3>
-    </article>
-  </div>
-  <div class="project_and_image">
-    <a href="https://homebasenu.com/home" target="_blank">
-      <img class = "project_image" id="homebase_logo" src="assets/homebase_logo.png"></img>
-    </a>
-    <article class="project_description">
-      <h2>Software Engineer</h2>
-      <h3 class="company_name"> Homebase </h3>
-      <p> During the summer of 2020, some close friends of mine created Homebase, a platform for Northwestern students to find
-        better off-campus housing. I joined as the third member of the Startup, and its been a total blast.
-        Whether it be writing custom Python functions to interact with our database, re-styling pages based on mockups
-        using HTML and CSS, or even creating our own automatic email service in TypeScript, I've gotten real experiences 
-        with a ton of different programming languages and fields that other opportunities just can't offer. </p>
-      <h3 class="experience_date"> September 2020 - Present </h3>
     </article>
   </div>
   <div class="project_and_image">
@@ -209,11 +246,11 @@ function loadContactInfo () {
 
 function loadProgrammingLanguages () {
   // First, load the programming languages table.
-  const languages = ["HTML", "JavaScript", "CSS", "Java", "Python", "TypeScript", "C & Assembly", "C++", "C#", "PostgreSQL", "R & RStudio", "AMPL", "MATLAB"];
-  const languageLogos = ["html_logo.png", "javascript_logo.png", "css_logo.png", "java_logo.png", "python_logo.png",
-                         "typescript_logo.png", "c_logo.png", "cplus_logo.png", "csharp_logo.jpg", "postgresql_logo.png", 
+  const languages = ["HTML", "JavaScript", "C++", "CSS", "Java", "Python", "TypeScript", "C & Assembly", "C#", "PostgreSQL", "R & RStudio", "AMPL", "MATLAB"];
+  const languageLogos = ["html_logo.png", "javascript_logo.png", "cplus_logo.png", "css_logo.png", "java_logo.png", "python_logo.png",
+                         "typescript_logo.png", "c_logo.png", "csharp_logo.jpg", "postgresql_logo.png", 
                          "r_logo.png", "ampl_logo.jpg", "matlab_logo.png"];
-  const languageSkills = [5, 5, 4, 4, 4, 4, 3, 3, 3, 3, 3, 2, 2];
+  const languageSkills = [5, 5, 4, 4, 4, 4, 4, 3, 3, 3, 3, 2, 2];
   
   for (var i=0; i<languages.length; i++) {
     // Create new row.
