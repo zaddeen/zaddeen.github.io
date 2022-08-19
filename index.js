@@ -202,9 +202,10 @@ function loadExperience () {
       <img class = "project_image" id="google_logo" src="assets/google_logo.jpg"></img>
     </a>
     <article class="project_description">
-      <h2>Incoming Sofware Engineering Intern</h2>
+      <h2> Software Engineering Intern</h2>
       <h3 class="company_name"> Google </h3>
-      <p> I'll be joining Google for the summer of 2022 as a Software Engineering Intern - can't wait to start! </p>
+      <p> I'm currently working as an intern on the App Ads team at Google and learning a ton about
+          Angular and Python. Stay tuned for more updates! </p>
       <h3 class="experience_date"> June - September 2022 </h3>
     </article>
   </div>
