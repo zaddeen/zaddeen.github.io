@@ -177,10 +177,20 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 1vh;
+}
+
+.education_text, .education_date {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.education_date {
+  font-size: 14px;
 }
 
 .degree_image {
-  width: 50px;
+  width: 60px;
   margin-right: 1%;
 }
 
@@ -200,8 +210,8 @@ body {
 }
 
 #self_photo {
-  height:199px;
-  width:172px;
+  height:250px;
+  width:250px;
 }
 
 table {

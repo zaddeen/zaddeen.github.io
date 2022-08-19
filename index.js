@@ -10,13 +10,15 @@ function loadAboutMe () {
         <div class="personal_info">
             <p> I've always loved problem solving, and I found
               that programming was the perfect way to blend my creativity with something
-              that challenged me. I'm now a Senior studying Computer Science at Northwestern (in a combined degree program
-              to get my Bachelor's and Master's concurrently),
-              and I've delved into several areas in CS through my classes - these include
-              Front-End Design, Machine Learning, and Scalable Software Architectures. Outside of class I've enjoyed
-              working with sorting algorithms and experimenting with APIs, especially those that
-              have data about some of my hobbies (including playing cards, the NBA, and the sci-fi
-              TV show Rick and Morty).</p>
+              that challenged me. I'm now a 5th year finishing my Master's degree in Computer 
+              Science at Northwestern after having completed my Bachelor's in June 2022.
+              Some of my favorite classes at Northwestern included Front-End Design, Machine Learning, 
+              and Scalable Software Architectures, and I've found that I align best with Front End or
+              Full Stack developer roles. Outside of class my biggest project was Homebase, a service 
+              designed to help NU students find off-campus housing in the Evanston area, which I helped
+              run for about a year. In my free time I enjoy watching sports and playing video/card games,
+              and I'm excited to start working on personal projects that reflect those interests.
+              </p>
         </div>
         <img class = "bio_image" id="self_photo" src="assets/self-photo.jpeg"></img>
       </div>
@@ -24,12 +26,25 @@ function loadAboutMe () {
     <h2 class="education_title"> Education </h2>
     <div class="education_info">
       <div class="photo_and_degree">
+        <img class="degree_image" src="assets/nu_engineering_logo.jpeg"> </img>
+        <div class="degree_description">
+          <p class="education_text"> Master's of Science in <b><i> Computer Science </i></b> </p>
+          <p class="education_date"> December 2022 (Anticipated) </p>
+        </div>
+      </div>
+      <div class="photo_and_degree">
         <img class="degree_image" src="assets/nu_engineering_logo.jpeg"> </img> 
-        <p class="education_text"> Combined BS/MS in <b><i> Computer Science </i></b> </p>
+        <div class="degree_description">
+          <p class="education_text"> Bachelor's of Science in <b><i> Computer Science </i></b> </p>
+          <p class="education_date"> June 2022 </p>
+        </div>
       </div>
       <div class="photo_and_degree">
         <img class="degree_image" src="assets/nu_kellogg_logo.png"> </img> 
-        <p class="education_text"> Kellogg Certificate Program for Undergraduates in <b><i> Managerial Analytics </i></b> </p>
+        <div class="degree_description">
+          <p class="education_text"> Kellogg Certificate Program for Undergraduates in <b><i> Managerial Analytics </i></b> </p>
+          <p class="education_date"> June 2022 </p>
+        </div>
       </div>
     </div>
     <h2 class="programming_title">Programming Languages & Skills</h2>
@@ -52,6 +67,24 @@ function loadProjects () {
   clearStyles();
   document.getElementById("main_area").innerHTML = 
   `
+  <div class="project_and_image">
+    <a href="https://zaddeen.github.io/stroller_chaser/" target="_blank">
+      <img class = "project_image" id="stroller_chaser" src="assets/stroller_chaser.png"></img>
+    </a>
+    <article class="project_description">
+      <h2><a href="https://zaddeen.github.io/stroller_chaser/" target="_blank">stroller chaser</a></h2>
+      <h3> Unity: C# </h3>
+      <p> If you've ever played games like Geometry Dash, you know how rewarding it is when you finally
+        nail the perfect movements and are able to move past a difficult level. In the spirit of Geometry
+        Dash and other similar games, I created stroller chaser with two other teammates as a quarter-long
+        project for our Game Development Studio class. I had a ton of fun combining my personal love of
+        video games with my computer science education, and it was great sharpening up my Unity skills as well. 
+        In addition to the code that I wrote I put my creative side to the test and designed all of the 
+        sprites. The game is available to play on the web by clicking on the title or stroller image - enjoy!
+      </p>
+      <h3 class="experience_date"> January - March 2022 </h3>
+    </article>
+  </div>
   <div class="project_and_image">
     <a href="https://evanstonvaxalert.com/" target="_blank">
       <img id="vax_alert" src="assets/vax-banner.png"></img>
@@ -119,7 +152,7 @@ function loadProjects () {
   </div>
   <div class="project_and_image">
     <a href="https://hci330-bmp.github.io/elate/" target="_blank">
-      <img class = "project_image" id="elate_logo" src="assets/elate_logo.png"></img>
+      <img class="project_image" id="elate_logo" src="assets/elate_logo.png"></img>
     </a>
     <article class = "project_description">
       <h2><a href="https://hci330-bmp.github.io/elate/" target="_blank">Elate </a></h2>
@@ -246,13 +279,28 @@ function loadContactInfo () {
 
 function loadProgrammingLanguages () {
   // First, load the programming languages table.
-  const languages = ["HTML", "JavaScript", "C++", "CSS", "Java", "Python", "TypeScript", "C & Assembly", "C#", "PostgreSQL", "R & RStudio", "AMPL", "MATLAB"];
-  const languageLogos = ["html_logo.png", "javascript_logo.png", "cplus_logo.png", "css_logo.png", "java_logo.png", "python_logo.png",
-                         "typescript_logo.png", "c_logo.png", "csharp_logo.jpg", "postgresql_logo.png", 
-                         "r_logo.png", "ampl_logo.jpg", "matlab_logo.png"];
-  const languageSkills = [5, 5, 4, 4, 4, 4, 4, 3, 3, 3, 3, 2, 2];
+  const programmingLanguageSkills = [
+    {language: 'HTML', logoLink: 'html_logo.png', skillLevel: 5},
+    {language: 'JavaScript', logoLink: 'javascript_logo.png', skillLevel: 5},
+    {language: 'TypeScript', logoLink: 'typescript_logo.png', skillLevel: 5},
+    {language: 'Python', logoLink: 'python_logo.png', skillLevel: 5},
+    {language: 'C++', logoLink: 'cplus_logo.png', skillLevel: 4},
+    {language: 'C#', logoLink: 'csharp_logo.jpg', skillLevel: 4},
+    {language: 'CSS', logoLink: 'css_logo.png', skillLevel: 4},
+    {language: 'Java', logoLink: 'java_logo.png', skillLevel: 4},
+    {language: 'AMPL', logoLink: 'ampl_logo.jpg', skillLevel: 3},
+    {language: 'C & Assembly', logoLink: 'c_logo.png', skillLevel: 3},
+    {language: 'MATLAB', logoLink: 'matlab_logo.png', skillLevel: 3},
+    {language: 'PostgreSQL', logoLink: 'postgresql_logo.png', skillLevel: 3},
+    {language: 'R & RStudio', logoLink: 'r_logo.png', skillLevel: 3},
+  ]
+  // const languages = ["HTML", "JavaScript", "C++", "CSS", "Java", "Python", "TypeScript", "C & Assembly", "C#", "PostgreSQL", "R & RStudio", "AMPL", "MATLAB"];
+  // const languageLogos = ["html_logo.png", "javascript_logo.png", "cplus_logo.png", "css_logo.png", "java_logo.png", "python_logo.png",
+  //                        "typescript_logo.png", "c_logo.png", "csharp_logo.jpg", "postgresql_logo.png", 
+  //                        "r_logo.png", "ampl_logo.jpg", "matlab_logo.png"];
+  // const languageSkills = [5, 5, 4, 4, 4, 4, 4, 3, 3, 3, 3, 2, 2];
   
-  for (var i=0; i<languages.length; i++) {
+  for (let pl of programmingLanguageSkills) {
     // Create new row.
     var newRow = document.createElement("tr");
     // Add programming language and image.
@@ -260,35 +308,43 @@ function loadProgrammingLanguages () {
     languageNameImage.className = "photo_and_language";
     var languageImage = document.createElement("img");
     languageImage.className = "programming_logo";
-    languageImage.src = "assets/programming_languages/" + languageLogos[i];
+    languageImage.src = "assets/programming_languages/" + pl.logoLink;
     languageNameImage.appendChild(languageImage);
     var languageName = document.createElement("p");
-    var langText = document.createTextNode(languages[i]);
+    var langText = document.createTextNode(pl.language);
     languageName.appendChild(langText);
     languageNameImage.appendChild(languageName);
     // Add skill level for given language.
-    var skillLevel = document.createElement("td");
-    for (var j=0; j<5; j++) {
-      if (j < languageSkills[i]) {
-        skillLevel.innerHTML += `<img class="exp_star" src="assets/programming_languages/yellow_star.png"> </img>`
+    var stars = document.createElement("td");
+    for (var i=0; i<5; i++) {
+      if (i < pl.skillLevel) {
+        stars.innerHTML += `<img class="exp_star" src="assets/programming_languages/yellow_star.png"> </img>`
       }
       else {
-        skillLevel.innerHTML += `<img class="exp_star" src="assets/programming_languages/star_logo.png"> </img>`
+        stars.innerHTML += `<img class="exp_star" src="assets/programming_languages/star_logo.png"> </img>`
       }
       
     }
     // Append the finished row to the table.
     newRow.appendChild(languageNameImage);
-    newRow.appendChild(skillLevel);
+    newRow.appendChild(stars);
     document.getElementById("programming_table").appendChild(newRow);
   }
 
   // Now, load the skills table.
-  const skills = ["Git", "React", "Firebase", "Office", "AWS"];
-  const skillLogos = ["git_logo.png", "react_logo.png", "firebase_logo.png", "office_logo.png", "aws_logo.png"]
-  const skillLevels = [5, 5, 4, 4, 3];
+  const nonProgrammingLanguageSkills = [
+    {skill: 'Angular', logoLink: 'angular_logo.png', skillLevel: 5},
+    {skill: 'Git', logoLink: 'git_logo.png', skillLevel: 5},
+    {skill: 'React', logoLink: 'react_logo.png', skillLevel: 5},
+    {skill: 'Firebase', logoLink: 'firebase_logo.png', skillLevel: 4},
+    {skill: 'Office', logoLink: 'office_logo.png', skillLevel: 3},
+    {skill: 'AWS', logoLink: 'aws_logo.png', skillLevel: 3},
+  ]
+  // const skills = ["Git", "React", "Firebase", "Office", "AWS"];
+  // const skillLogos = ["git_logo.png", "react_logo.png", "firebase_logo.png", "office_logo.png", "aws_logo.png"]
+  // const skillLevels = [5, 5, 4, 4, 3];
 
-  for (var m=0; m<skills.length; m++) {
+  for (let item of nonProgrammingLanguageSkills) {
     // Create new row.
     var skillRow = document.createElement("tr");
     // Add programming language and image.
@@ -296,16 +352,16 @@ function loadProgrammingLanguages () {
     skillBox.className = "photo_and_language";
     var skillImage = document.createElement("img");
     skillImage.className = "programming_logo";
-    skillImage.src = "assets/programming_languages/" + skillLogos[m];
+    skillImage.src = "assets/programming_languages/" + item.logoLink;
     skillBox.appendChild(skillImage);
     var skillName = document.createElement("p");
-    var skillText = document.createTextNode(skills[m]);
+    var skillText = document.createTextNode(item.skill);
     skillName.appendChild(skillText);
     skillBox.appendChild(skillName);
     // Add skill level for given language.
     var skillStars = document.createElement("td");
-    for (var n=0; n<5; n++) {
-      if (n < skillLevels[m]) {
+    for (var i=0; i<5; i++) {
+      if (i < item.skillLevel) {
         skillStars.innerHTML += `<img class="exp_star" src="assets/programming_languages/yellow_star.png"> </img>`
       }
       else {
