@@ -340,7 +340,8 @@ footer img:hover {
   .project_and_image {width: 450px;}
   .project_description {margin-left: 10%; margin-right: 10%;}
   .bio {width: 450px;}
-  .contact_description {width: 450px;}
+  .contact_text {width: 450px;}
+  .social_media {margin-bottom: 5vh;}
 }
 
 

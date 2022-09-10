@@ -10,9 +10,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
-  <script src="index.js"> </script>
+  <script src="index.js" defer> </script>
 </head>
-<body onLoad="loadAboutMe()">
+<body>
   <div class="hero-image">
     <div class="hero-text">
       <h1>Hi! I'm Zaddeen Benaissa, welcome!</h1>
@@ -23,13 +23,270 @@
   </div>
   <nav>
     <ul class="nav-bar" id="nav-bar">
-      <li class="nav-item" id="about_nav" onClick = "loadAboutMe()"> <a href="#nav-bar">About Me</a></li>
-      <li class="nav-item" id="projects_nav" onClick = "loadProjects()"> <a href="#nav-bar">Projects</a></li>
-      <li class="nav-item" id="experience_nav" onClick="loadExperience()"> <a href="#nav-bar">Experience</a></li>
+      <li class="nav-item" onClick = "loadComponent(event)"> <a href="#nav-bar" id="about_nav">About Me</a></li>
+      <li class="nav-item" onClick = "loadComponent(event)"> <a href="#nav-bar" id="projects_nav">Projects</a></li>
+      <li class="nav-item" onClick="loadComponent(event)"> <a href="#nav-bar" id="experience_nav">Experience</a></li>
     </ul>
   </nav>
   <hr>
   <div id="main_area">
+    <div id="about">
+      <div id="bio_and_title">
+        <h2 class="bio_title"> Bio </h2>
+        <div class="bio">
+          <div class="personal_info">
+            <p> I've always loved problem solving, and I found
+              that programming was the perfect way to blend my creativity with something
+              that challenged me. I'm now a 5th year finishing my Master's degree in Computer
+              Science at Northwestern after having completed my Bachelor's in June 2022.
+              Some of my favorite classes at Northwestern included Front-End Design, Machine Learning,
+              and Scalable Software Architectures, and I've found that I align best with Front End or
+              Full Stack developer roles. Outside of class my biggest project was Homebase, a service
+              designed to help NU students find off-campus housing in the Evanston area, which I helped
+              run for about a year. In my free time I enjoy watching sports and playing video/card games,
+              and I'm excited to start working on personal projects that reflect those interests.
+            </p>
+          </div>
+          <img class="bio_image" id="self_photo" src="assets/self-photo.jpeg"></img>
+        </div>
+      </div>
+      <h2 class="education_title"> Education </h2>
+      <div class="education_info">
+        <div class="photo_and_degree">
+          <img class="degree_image" src="assets/nu_engineering_logo.jpeg"> </img>
+          <div class="degree_description">
+            <p class="education_text"> Master's of Science in <b><i> Computer Science </i></b> </p>
+            <p class="education_date"> December 2022 (Anticipated) </p>
+          </div>
+        </div>
+        <div class="photo_and_degree">
+          <img class="degree_image" src="assets/nu_engineering_logo.jpeg"> </img>
+          <div class="degree_description">
+            <p class="education_text"> Bachelor's of Science in <b><i> Computer Science </i></b> </p>
+            <p class="education_date"> June 2022 </p>
+          </div>
+        </div>
+        <div class="photo_and_degree">
+          <img class="degree_image" src="assets/nu_kellogg_logo.png"> </img>
+          <div class="degree_description">
+            <p class="education_text"> Kellogg Certificate Program for Undergraduates in <b><i> Managerial Analytics
+                </i></b> </p>
+            <p class="education_date"> June 2022 </p>
+          </div>
+        </div>
+      </div>
+      <h2 class="programming_title">Programming Languages & Skills</h2>
+      <div class="programming_languages" id="programming_languages">
+        <table id="programming_table">
+    
+        </table>
+        <table id="skills_table">
+    
+        </table>
+      </div>
+    </div>
+    <div id="projects" style="display:none;">
+      <div class="project_and_image">
+        <a href="https://zaddeen.github.io/stroller_chaser/" target="_blank">
+          <img class="project_image" id="stroller_chaser" src="assets/stroller_chaser.png"></img>
+        </a>
+        <article class="project_description">
+          <h2><a href="https://zaddeen.github.io/stroller_chaser/" target="_blank">stroller chaser</a></h2>
+          <h3> Unity: C# </h3>
+          <p> If you've ever played games like Geometry Dash, you know how rewarding it is when you finally
+            nail the perfect movements and are able to move past a difficult level. In the spirit of Geometry
+            Dash and other similar games, I created stroller chaser with two other teammates as a quarter-long
+            project for our Game Development Studio class. I had a ton of fun combining my personal love of
+            video games with my computer science education, and it was great sharpening up my Unity skills as well.
+            In addition to the code that I wrote I put my creative side to the test and designed all of the
+            sprites. The game is available to play on the web by clicking on the title or stroller image - enjoy!
+          </p>
+          <h3 class="experience_date"> January - March 2022 </h3>
+        </article>
+      </div>
+      <div class="project_and_image">
+        <a href="https://evanstonvaxalert.com/" target="_blank">
+          <img id="vax_alert" src="assets/vax-banner.png"></img>
+        </a>
+        <article class="project_description">
+          <h2><a href="https://evanstonvaxalert.com/" target="_blank">Evanston Vaccine Alert</a></h2>
+          <h3> Javascript (React), EJS </h3>
+          <p> As COVID-19 vaccines became more and more available during the Spring of 2021, my friends and I at Homebase
+            wanted to do our part to help our fellow Northwestern students and Evanston residents find appointments as
+            painlessly
+            as possible. To do this we created Evanston Vaccine Alert, a free service that users could sign up for to receive
+            automatic
+            emails with potential appointments in the Evanston & Chicago area. Optionally, we also offered the ability to
+            receive
+            text message updates instead. The project was a great way to give back to the community while also learning about
+            the automation
+            tools provided by services like AWS and SignalWire. Though the service is no longer active, you can still click on
+            the logo
+            to see the web page we created and learn more about the services we offered.
+          </p>
+          <h3 class="experience_date"> March - May 2021 </h3>
+        </article>
+      </div>
+      <div class="project_and_image">
+        <a href="https://youtu.be/D_mMU-N8FOs" target="_blank">
+          <img id="search_engine" src="assets/searchengine.png"></img>
+        </a>
+        <article class="project_description">
+          <h2><a href="https://youtu.be/D_mMU-N8FOs" target="_blank">Simple Search Engine</a></h2>
+          <h3> Java, Javascript (React) </h3>
+          <p> For a project in my Scalable Software Architectures class, I created a Simple Search Engine modeled
+            off of Google. It was an excellent way to both become more familiar with Java and HTTP requests, both of which
+            I had never limited experience with. Then, I worked with a partner to deploy the entire system onto AWS, making it
+            publicly accessible and autonomous.
+            <br>
+            <br>
+            The components included a crawler to grab the most recent
+            news data (in the form of WARC files) and post them to S3 storage, a Tomcat server to fetch the results
+            of queries, and a React page to allow users to search and view results. Click on the title to watch
+            the showcase video of all the components in action!
+          </p>
+          <h3 class="experience_date"> January 2021 </h3>
+        </article>
+      </div>
+      <div class="project_and_image">
+        <a href="https://zaddeen.github.io/sorting_algorithms/" target="_blank">
+          <video class="project_image" id="sorting" playsinline autoplay muted loop>
+            <source src="assets/quicksort.mp4" type="video/mp4" />
+            <source src="assets/quicksort.webm" type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
+        </a>
+        <article class="project_description">
+          <h2><a href="https://zaddeen.github.io/sorting_algorithms/" target="_blank">Visualizing Sorting Algorithms</a></h2>
+          <h3> Javascript (React) </h3>
+          <p> While working remotely over the summer, I became totally transfixed with videos
+            of sorting algorithms in action. Thinking about it, I realized that I was familiar with
+            all of the pseudocode for the algorithms, so I decided to make my own project! I
+            created this React App my spare time in order to showcase and animate some of the most
+            popular/interesting sorting algorithms, including Merge Sort, Quicksort, and a few others.
+            The project was a great way to learn React and hone my JavaScript knowledge, and I'm excited
+            to continue adding to it in the future. The link to the live version is above, and I've
+            also pushed all of my code with extensive comments to a GitHub repository
+            <a href="https://github.com/zaddeen/sorting_algorithms" target="_blank" style="font-weight:bold">right here</a>.
+            Feel free to play around with it, I hope you enjoy watching as much as I do!
+          </p>
+          <h3 class="experience_date"> July 2020 </h3>
+        </article>
+      </div>
+      <div class="project_and_image">
+        <a href="https://hci330-bmp.github.io/elate/" target="_blank">
+          <img class="project_image" id="elate_logo" src="assets/elate_logo.png"></img>
+        </a>
+        <article class="project_description">
+          <h2><a href="https://hci330-bmp.github.io/elate/" target="_blank">Elate </a></h2>
+          <h3> HTML, CSS, Javascript</h3>
+          <p>For our final project for Human Computer Interaction, my team members and I
+            designed Elate, a website to help people keep track of the positive
+            aspects of their lives through journals and goals. We were able to user test
+            on a weekly basis, which helped us quickly respond to feedback and easily
+            incorporate our new ideas. Since the class focused UX (HTML, CSS, JavaScript) we
+            implemented no backend, but we found that testers enjoyed our simple and visually
+            pleasing design. You can check out the live prototype at the link above
+            (use the username "buymepants" and the password "password2" to log in)
+            as well as the GitHub repository
+            <a href="https://github.com/HCI330-BMP/elate" target="_blank" style="font-weight:bold">right here</a>.
+          </p>
+          <h3 class="experience_date"> January - March 2020 </h3>
+        </article>
+      
+      </div>
+      <div class="project_and_image">
+        <a href="https://github.com/zaddeen/galaga" target="_blank">
+          <img class="project_image" id="galaga_logo" src="assets/galaga_logo.png"></img>
+        </a>
+        <article class="project_description">
+          <h2><a href="https://github.com/zaddeen/galaga" target="_blank">Galaga</a></h2>
+          <h3>C++</h3>
+          <p>This final project was my first experience with game design, and I had a ton of
+            fun re-creating one of my childhood favorites. The goal was to re-create the video
+            game of our choice, following a list of functional requirements that we determined
+            as those most essential to the user experience. It was a great way to have fun
+            while also developing my object-oriented programming skills.</p>
+          <h3 class="experience_date"> March 2019 </h3>
+        </article>
+      </div>
+    </div>
+    <div id="experience" style="display:none;">
+      <div class="project_and_image">
+        <a href="https://careers.google.com/teams/engineering-technology/" target="_blank">
+          <img class="project_image" id="google_logo" src="assets/google_logo.jpg"></img>
+        </a>
+        <article class="project_description">
+          <h2> Software Engineering Intern</h2>
+          <h3 class="company_name"> Google </h3>
+          <p> This summer I had the opportunity to join Google as a Software Engineering Intern,
+              and I couldn't have had a better time. My project was to write a dashboard application to
+              centralize data about machine learning models for my team, App Ads. I was tasked with writing
+              both the frontend and backend, based off of some existing code that had been written by my
+              two hosts earlier in the year. I started by converting the existing backend structure from
+              Golang into Python, adding significant functionality and eventually creating an HTTP server 
+              capable of automatically parsing data from thousands of internal files, storing that data in
+              a globally distributed database, and serving the data through several API endpoints. I then 
+              created an Angular app to handle the frontend, which allowed users to view model data in two ways:
+              a table, which listed the name of each model and linked to its internal location, and a D3.js tree,
+              which displayed any models branched from the current production models and a wealth of data about
+              each of them (including their most recent file changes, if any children were being live tested
+              internally, and more). In just 12 weeks I was able to complete the entire dashboard and host it
+              on an internal job scheduling framework so that it could run on its own, making this one of my quickest
+              and most rewarding experiences yet. </p>
+          <h3 class="experience_date"> June - September 2022 </h3>
+        </article>
+      </div>
+      <div class="project_and_image">
+        <a href="https://homebasenu.com/home" target="_blank">
+          <img class="project_image" id="homebase_logo" src="assets/homebase_logo.png"></img>
+        </a>
+        <article class="project_description">
+          <h2>Software Engineer</h2>
+          <h3 class="company_name"> Homebase </h3>
+          <p> During the summer of 2020, some close friends of mine created Homebase, a platform for Northwestern students to
+            find
+            better off-campus housing. I joined as the third member of the Startup, and it was a total blast.
+            Whether it was writing custom Python functions to interact with our database, re-styling pages based on mockups
+            using HTML and CSS, or even creating our own automatic email service in TypeScript, I got real experience
+            with a ton of different programming languages and fields that other opportunities just couldn't offer. Though we
+            eventually decided to shut down Homebase in November 2021, it was an amazing opportunity that really helped me
+            gain
+            my footing as an experienced Software Engineer. </p>
+          <h3 class="experience_date"> September 2020 - November 2021 </h3>
+        </article>
+      </div>
+      <div class="project_and_image">
+        <a href="https://www.accenture.com/us-en/services/security-index" target="_blank">
+          <img class="project_image" id="accenture_logo" src="assets/accenture_logo.png"></img>
+        </a>
+        <article class="project_description">
+          <h2>Advanced App Engineering Summer Analyst</h2>
+          <h3 class="company_name"> Accenture </h3>
+          <p> I had the privelege of joining Accenture as a Summer Analyst during the summer of 2020, and it was an amazing
+            opportunity that taught me a ton about both the consulting field in general and test automation, which was my
+            main job focus. I helped analyze over 500 automated test scripts across a range of different teams in order to
+            ensure the fastest build times possible, and I eventually ended up re-designing the entire suite to slash thes
+            existing times by more than 25%. Overall, I learned a ton from working closely with my supervisor, and the
+            Accenture company culture was one of the best I have ever experienced. </p>
+          <h3 class="experience_date"> June - August 2021 </h3>
+        </article>
+      </div>
+      <div class="project_and_image">
+        <a href="https://www.mccormick.northwestern.edu/industrial/" target="_blank">
+          <img class="project_image" id="northwestern_logo" src="assets/northwestern_iems.png"></img>
+        </a>
+        <article class="project_description">
+          <h2>Research Intern</h2>
+          <h3 class="company_name"> Northwestern University IEMS Department </h3>
+          <p> As a Research Intern, I work closely with several specialized teams in order to help model
+            and improve school districts' transportation systems and enrollment capabilities. In order to do so,
+            I utilize optimization software packages within Python to understand and visualize how changes in the
+            district will affect the larger community.</p>
+          <h3 class="experience_date"> March 2020 - June 2021 </h3>
+        </article>
+      </div>
+    </div>
   </div>
 </body>
 <hr>
