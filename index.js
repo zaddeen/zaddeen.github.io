@@ -22,11 +22,11 @@ function loadProgrammingLanguages () {
   console.log('broken?')
   // First, load the programming languages table.
   const programmingLanguageSkills = [
+    {language: 'C++', logoLink: 'cplus_logo.png', skillLevel: 5},
     {language: 'HTML', logoLink: 'html_logo.png', skillLevel: 5},
     {language: 'JavaScript', logoLink: 'javascript_logo.png', skillLevel: 5},
     {language: 'TypeScript', logoLink: 'typescript_logo.png', skillLevel: 5},
     {language: 'Python', logoLink: 'python_logo.png', skillLevel: 5},
-    {language: 'C++', logoLink: 'cplus_logo.png', skillLevel: 4},
     {language: 'C#', logoLink: 'csharp_logo.jpg', skillLevel: 4},
     {language: 'CSS', logoLink: 'css_logo.png', skillLevel: 4},
     {language: 'Java', logoLink: 'java_logo.png', skillLevel: 4},
