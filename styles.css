@@ -325,12 +325,12 @@ footer img:hover {
   #main_area {margin: 2vh 0;}
   .nav-item {margin-left: 20px; margin-right: 20px;}
   .project_and_image {flex-direction: column; align-items: center; width: 680px; margin-bottom: 5vh;}
-  /*.project_and_image h2 {margin-bottom: -2%;}*/
   .project_description {text-align: center; margin-left: 0;}
   #about p {font-size: 18px;}
   .bio {margin-left: auto; margin-right: auto; flex-direction: column; align-items: center; width: 680px;}
   .bio_title, .education_title, .bio {text-align: center;}
   .bio_image {margin-top: 2vh; margin-bottom: 2.5vh;}
+  #self_photo {width: 200px;}
   .education_info {display: flex; flex-direction: column; white-space: nowrap; align-items: flex-start; margin-left: auto; margin-right: auto; width: 60vw;}
   .personal_info {text-align:center; margin-right: 0;}
   #scroll_logo {padding-top: 70vh;}
